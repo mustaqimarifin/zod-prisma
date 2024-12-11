@@ -1,5 +1,5 @@
 {
-	"name": "@mustaqimarifin/zod-prisma",
+	"name": "@kaviartaco/zod-prisma",
 	"version": "0.5.5",
 	"description": "Fork of Carter Grimmeisen's zod-prisma utility. Updated dependencies",
 	"license": "MIT",
@@ -7,7 +7,7 @@
 	"homepage": "https://github.com/mustaqimarifin/zod-prisma#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mustaqimarifin/zod-prisma.git"
+		"url": "git+https://github.com/mustaqimarifin/zod-prisma.git"
 	},
 	"bugs": {
 		"url": "https://github.com/mustaqimarifin/zod-prisma/issues"
@@ -75,5 +75,8 @@
 		"decimal.js": {
 			"optional": true
 		}
+	},
+	"directories": {
+		"example": "examples"
 	}
 }
