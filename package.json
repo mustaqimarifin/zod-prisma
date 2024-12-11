@@ -28,10 +28,9 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "dts build --target node --format cjs --rollupTypes",
+		"build": "dts build --target node --format cjs,esm --rollupTypes",
 		"lint": "tsc --noEmit && dts lint src --ignore-pattern src/test/functional",
-		"prepare": "husky install",
-		"prepublish": "dts build --target node --format cjs --rollupTypes",
+		"prepublish": "dts build --target node --format cjs,esm --rollupTypes",
 		"start": "dts watch",
 		"test": "dts test --maxWorkers=4 --verbose"
 	},
@@ -62,7 +61,6 @@
 		"execa": "^9.5.2",
 		"fast-glob": "^3.3.2",
 		"fs-extra": "^11.2.0",
-		"husky": "^9.1.7",
 		"prisma": "^6.0.1",
 		"tslib": "^2.8.1",
 		"typescript": "^5.7.2",
